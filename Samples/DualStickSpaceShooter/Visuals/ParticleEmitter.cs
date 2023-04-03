@@ -1,4 +1,4 @@
-﻿using System;
+﻿// using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -122,7 +122,7 @@ namespace DualStickSpaceShooter
 		}
 		public void InitParticle(ref Particle particle)
 		{
-			Random random = MathF.Rnd;
+			System.Random random = MathF.Rnd;
 
 			if (this.depthMult != 0.0f)
 			{

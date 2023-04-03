@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Version>4.0.0-alpha3</Version>
 		<Copyright>Copyright © Duality Core Team 2020</Copyright>
@@ -85,7 +85,7 @@
 		<Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(RootFolder)Build\Output\" />
 		<Copy SourceFiles="$(OutputPath)$(AssemblyName).pdb" DestinationFolder="$(RootFolder)Build\Output\" />
 		<Copy SourceFiles="$(OutputPath)$(AssemblyName).xml" DestinationFolder="$(RootFolder)Build\Output\" />
-		<Copy SourceFiles="$(PkgNVorbis)\lib\netstandard2.0\NVorbis.dll" DestinationFolder="$(RootFolder)Build\Output\" />
-		<Copy SourceFiles="$(PkgNVorbis)\lib\netstandard2.0\NVorbis.xml" DestinationFolder="$(RootFolder)Build\Output\" />
+		<!-- <Copy SourceFiles="$(PkgNVorbis)\lib\net7.0\NVorbis.dll" DestinationFolder="$(RootFolder)Build\Output\" /> -->
+		<!-- <Copy SourceFiles="$(PkgNVorbis)\lib\net7.0\NVorbis.xml" DestinationFolder="$(RootFolder)Build\Output\" /> -->
 	</Target>
 </Project>

@@ -1,4 +1,4 @@
-﻿using System;
+﻿// using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -63,7 +63,7 @@ namespace DualStickSpaceShooter
 					.Where(m => m != InputMethod.Unknown)
 					.ToArray();
 				InputMethod[] freeMethods = 
-					Enum.GetValues(typeof(InputMethod))
+					System.Enum.GetValues(typeof(InputMethod))
 					.Cast<InputMethod>()
 					.Except(takenMethods)
 					.ToArray();

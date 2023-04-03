@@ -1,4 +1,4 @@
-﻿using System;
+﻿// using System;
 using System.Linq;
 
 using Duality;
@@ -361,7 +361,7 @@ namespace Steering
 			}
 
 			float denom = ((vx * vx) + (vy * vy));
-			if (Math.Abs(denom) < float.Epsilon) {
+			if (System.Math.Abs(denom) < float.Epsilon) {
 				if(denom < 0f)
 					minT = maxT = float.NegativeInfinity;
 				else

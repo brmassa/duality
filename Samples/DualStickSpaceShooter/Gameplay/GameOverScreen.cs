@@ -1,4 +1,4 @@
-﻿using System;
+﻿// using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -118,7 +118,7 @@ namespace DualStickSpaceShooter
 						// Specify a texture coordinate rect so it spans the entire screen repeating itself, instead of being stretched
 						if (this.blendMaterial.MainTexture != null)
 						{
-							Random rnd = new Random((int)this.lastTimeAnyAlive);
+							System.Random rnd = new System.Random((int)this.lastTimeAnyAlive);
 							Vector2 randomTranslate = rnd.NextVector2(0.0f, 0.0f, this.canvas.State.TextureBaseSize.X, this.canvas.State.TextureBaseSize.Y);
 							this.canvas.State.TextureCoordinateRect = new Rect(
 								randomTranslate.X, 

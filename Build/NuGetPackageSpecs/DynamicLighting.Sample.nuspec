@@ -18,7 +18,7 @@
       <files include="**/*" buildAction="None" copyToOutput="true"/> 
     </contentFiles> 
     <dependencies>
-      <group targetFramework="net472">
+      <group targetFramework="net7.0">
         <dependency id="AdamsLair.Duality" version="4.0.0-alpha3" />
         <dependency id="AdamsLair.Duality.Editor" version="4.0.0-alpha3" />
       </group>
@@ -27,8 +27,8 @@
   <files>
     <file src="Icons\DynamicLighting.png" target="\icon.png" />
     <file src="..\..\Samples\DynamicLighting\Content\Data\**\*.res" target="contentFiles\any\any\Data" />
-    <file src="..\..\Samples\DynamicLighting\Core\Content\Plugins\netstandard2.0\DynamicLighting.Sample.core.dll" target="lib\net472" />
-    <file src="..\..\Samples\DynamicLighting\Core\Content\Plugins\netstandard2.0\DynamicLighting.Sample.core.xml" target="lib\net472" />
-    <file src="..\..\Samples\DynamicLighting\Editor\Content\Plugins\net472\DynamicLighting.Sample.editor.dll" target="lib\net472" />
+    <file src="..\..\Samples\DynamicLighting\Core\Content\Plugins\net7.0\DynamicLighting.Sample.core.dll" target="lib\net7.0" />
+    <file src="..\..\Samples\DynamicLighting\Core\Content\Plugins\net7.0\DynamicLighting.Sample.core.xml" target="lib\net7.0" />
+    <file src="..\..\Samples\DynamicLighting\Editor\Content\Plugins\net7.0\DynamicLighting.Sample.editor.dll" target="lib\net7.0" />
   </files>
 </package>

@@ -1,4 +1,4 @@
-﻿using System;
+﻿// using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -121,7 +121,7 @@ namespace AudioHandling
 		private void SyncSounds(IList<ContentRef<Sound>> sounds, ref SoundInstance[] playing)
 		{
 			if (playing.Length != sounds.Count)
-				Array.Resize(ref playing, sounds.Count);
+				System.Array.Resize(ref playing, sounds.Count);
 
 			for (int i = 0; i < sounds.Count; i++)
 			{

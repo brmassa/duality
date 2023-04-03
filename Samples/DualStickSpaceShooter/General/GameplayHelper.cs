@@ -1,4 +1,4 @@
-﻿using System;
+﻿// using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,7 @@ namespace DualStickSpaceShooter
 {
 	public static class GameplayHelper
 	{
-		public static void Shockwave(Vector2 at, float radius, float impulse, float maxVelocity, Predicate<RigidBody> affectsObject)
+		public static void Shockwave(Vector2 at, float radius, float impulse, float maxVelocity, System.Predicate<RigidBody> affectsObject)
 		{
 			// Iterate over all RigidBodies with a line-of-sight to the shockwave center and push them away
 			IterateLineOfSightBodies(at, radius, affectsObject, (body, hitData) =>
@@ -21,7 +21,7 @@ namespace DualStickSpaceShooter
 				body.ApplyWorldImpulse(-hitData.Normal * MathF.Min(distanceFactor * impulse, maxImpulse), hitData.Pos);
 			});
 		}
-		public static void ExplosionDamage(Vector2 at, float radius, float damage, Predicate<RigidBody> affectsObject)
+		public static void ExplosionDamage(Vector2 at, float radius, float damage, System.Predicate<RigidBody> affectsObject)
 		{
 			// Iterate over all RigidBodies with a line-of-sight to the explosion center and damage them
 			IterateLineOfSightBodies(at, radius, affectsObject, (body, hitData) =>
@@ -35,7 +35,7 @@ namespace DualStickSpaceShooter
 		}
 
 		private delegate void LineOfSightCallback(RigidBody body, RayCastData hitData);
-		private static void IterateLineOfSightBodies(Vector2 at, float radius, Predicate<RigidBody> affectsObject, LineOfSightCallback callback)
+		private static void IterateLineOfSightBodies(Vector2 at, float radius, System.Predicate<RigidBody> affectsObject, LineOfSightCallback callback)
 		{
 			// Iterate over all RigidBodies in the area
 			List<RigidBody> nearBodies = new List<RigidBody>();

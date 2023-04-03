@@ -15,7 +15,7 @@
     <tags>Duality Editor Plugin SceneView</tags>
     <releaseNotes>Patch Version Update</releaseNotes>
     <dependencies>
-      <group targetFramework="net472">
+      <group targetFramework="net7.0">
         <dependency id="AdamsLair.Duality" version="4.0.0-alpha3" />
         <dependency id="AdamsLair.Duality.Editor" version="4.0.0-alpha3" />
       </group>
@@ -23,7 +23,7 @@
   </metadata>
   <files>
     <file src="Icons\SceneView.png" target="\icon.png" />
-    <file src="..\Output\Plugins\SceneView.editor.dll" target="lib\net472" />
-    <file src="..\Output\Plugins\SceneView.editor.pdb" target="lib\net472" />
+    <file src="..\Output\Plugins\SceneView.editor.dll" target="lib\net7.0" />
+    <file src="..\Output\Plugins\SceneView.editor.pdb" target="lib\net7.0" />
   </files>
 </package>

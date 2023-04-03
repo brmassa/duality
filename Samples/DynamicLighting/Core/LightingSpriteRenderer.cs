@@ -1,4 +1,4 @@
-﻿using System;
+﻿// using System;
 
 using Duality;
 using Duality.Editor;
@@ -68,7 +68,7 @@ namespace DynamicLighting
 			// Using Per-Pixel Lighting? Pass objRotation Matrix via vertex attribute.
 			Vector4 objRotMat = Vector4.Zero;
 			if (perPixel)
-				objRotMat = new Vector4((float)Math.Cos(-rotation), -(float)Math.Sin(-rotation), (float)Math.Sin(-rotation), (float)Math.Cos(-rotation));
+				objRotMat = new Vector4((float)MathF.Cos(-rotation), -(float)MathF.Sin(-rotation), (float)MathF.Sin(-rotation), (float)MathF.Cos(-rotation));
 			
 			// Calculate UV coordinates
 			float left   = uvRect.X;

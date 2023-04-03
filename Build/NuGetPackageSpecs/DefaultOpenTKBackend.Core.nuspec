@@ -16,7 +16,7 @@
     <releaseNotes>Added Support for Setting Hardware Cursors
 #ADD: It is now possible to adjust the hardware cursor on the game window through `INativeWindow`.</releaseNotes>
     <dependencies>
-      <group targetFramework="net472">
+      <group targetFramework="net7.0">
         <dependency id="AdamsLair.Duality" version="4.0.0-alpha3" />
         <dependency id="AdamsLair.OpenTK" version="1.2.2" />
       </group>
@@ -24,8 +24,8 @@
   </metadata>
   <files>
     <file src="Icons\DefaultOpenTKBackend.png" target="\icon.png" />
-    <file src="..\Output\Plugins\DefaultOpenTK.Core.dll" target="lib\net472" />
-    <file src="..\Output\Plugins\DefaultOpenTK.Core.pdb" target="lib\net472" />
+    <file src="..\Output\Plugins\DefaultOpenTK.Core.dll" target="lib\net7.0" />
+    <file src="..\Output\Plugins\DefaultOpenTK.Core.pdb" target="lib\net7.0" />
     <file src="..\Output\OpenALSoft32.dll" target="runtimes\any\native" />
     <file src="..\Output\OpenALSoft64.dll" target="runtimes\any\native" />
   </files>

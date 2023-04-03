@@ -1,4 +1,4 @@
-﻿using System;
+﻿// using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -287,7 +287,7 @@ namespace DualStickSpaceShooter
 					damageObj.Parent = this.GameObj;
 
 					this.damageEffect = damageObj.GetComponent<ParticleEffect>();
-					if (this.damageEffect == null) throw new NullReferenceException();
+					if (this.damageEffect == null) throw new System.NullReferenceException();
 				}
 
 				// Configure the damage effect

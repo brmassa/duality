@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net472</TargetFramework>
-		<LangVersion>7.3</LangVersion>
+		<TargetFramework>net7.0</TargetFramework>
+		<LangVersion>11.0</LangVersion>
 		<Copyright>Copyright © Duality Core Team 2020</Copyright>
 		<RootNamespace>Duality.Backend.DefaultOpenTK</RootNamespace>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -26,6 +26,7 @@
     <PackageReference Include="AdamsLair.OpenTK" GeneratePathProperty="true">
       <Version>1.2.2</Version>
     </PackageReference>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,7 +43,7 @@
     <Copy SourceFiles="$(OutputPath)$(AssemblyName).pdb" DestinationFolder="$(RootFolder)Build\Output\Plugins\" />
     <Copy SourceFiles="$(OutputPath)OpenALSoft32.dll" DestinationFolder="$(RootFolder)Build\Output\" />
     <Copy SourceFiles="$(OutputPath)OpenALSoft64.dll" DestinationFolder="$(RootFolder)Build\Output\" />
-    <Copy SourceFiles="$(PkgAdamsLair_OpenTK)\lib\net20\OpenTK.dll" DestinationFolder="$(RootFolder)Build\Output\"/>
-	  <Copy SourceFiles="$(PkgAdamsLair_OpenTK)\lib\net20\OpenTK.xml" DestinationFolder="$(RootFolder)Build\Output\"/>
+    <Copy SourceFiles="$(PkgAdamsLair_OpenTK)\lib\net20\OpenTK.dll" DestinationFolder="$(RootFolder)Build\Output\" />
+	  <Copy SourceFiles="$(PkgAdamsLair_OpenTK)\lib\net20\OpenTK.xml" DestinationFolder="$(RootFolder)Build\Output\" />
   </Target>
 </Project>

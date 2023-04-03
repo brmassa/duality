@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 namespace Duality.Tests.Properties {
-    using System;
+	using System;
     
     
     /// <summary>

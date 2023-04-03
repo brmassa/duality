@@ -1,5 +1,5 @@
 ﻿using Duality;
-using System;
+// using System;
 using System.Collections.Generic;
 
 namespace Steering
@@ -43,7 +43,7 @@ namespace Steering
 			float undistortedAngle = MathF.Lerp(-1.0f, 1.0f, ((float)directionIdx / this.outerLayerSampleCount));
 
 			float speedFactor = undistortedSpeedFactor;
-			float angle = MathF.Atan2(oldVelocity.Y, oldVelocity.X) + MathF.Pow(Math.Abs(undistortedAngle), 0.8f) * undistortedAngle * MathF.RadAngle180;
+			float angle = MathF.Atan2(oldVelocity.Y, oldVelocity.X) + MathF.Pow(MathF.Abs(undistortedAngle), 0.8f) * undistortedAngle * MathF.RadAngle180;
 				
 			return new Vector2(MathF.Cos(angle) * speedFactor, MathF.Sin(angle) * speedFactor);
 		}

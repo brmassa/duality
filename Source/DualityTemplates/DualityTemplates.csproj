@@ -7,7 +7,7 @@
 		<Authors>Rick van Dam</Authors>
 		<Description>Templates to use with the Duality game engine</Description>
 		<PackageTags>dotnet-new;templates;duality</PackageTags>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<OutputPath>$(MSBuildProjectDirectory)\bin</OutputPath>
 		<IncludeContentInPack>true</IncludeContentInPack>

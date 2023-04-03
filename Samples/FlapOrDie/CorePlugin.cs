@@ -1,4 +1,4 @@
-﻿using System;
+﻿// using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,7 +39,7 @@ namespace FlapOrDie
 		public static ushort CurrentHighScore
 		{
 			get { return currentHighScore; }
-			set { currentHighScore = Math.Max(currentHighScore, value); }
+			set { currentHighScore = System.Math.Max(currentHighScore, value); }
 		}
 
 		// Override methods here for global logic
@@ -58,7 +58,7 @@ namespace FlapOrDie
 					using (Stream s = FileOp.Open(HIGHSCORE_FILE, FileAccessMode.Read))
 					using (StreamReader sr = new StreamReader(s))
 					{
-						highScore = Convert.ToUInt16(sr.ReadLine());
+						highScore = System.Convert.ToUInt16(sr.ReadLine());
 					}
 				}
 				catch { }
@@ -75,7 +75,7 @@ namespace FlapOrDie
 					using (Stream s = FileOp.Create(HIGHSCORE_FILE))
 					using (StreamWriter sw = new StreamWriter(s))
 					{
-						sw.WriteLine(String.Format("{0}", currentHighScore));
+						sw.WriteLine(string.Format("{0}", currentHighScore));
 					}
 				}
 				catch { }

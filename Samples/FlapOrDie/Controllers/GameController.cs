@@ -1,4 +1,4 @@
-﻿using System;
+﻿// using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -95,8 +95,8 @@ namespace FlapOrDie.Controllers
 
         void ICmpUpdatable.OnUpdate()
         {
-            string highschore = player.Points > FlapOrDieCorePlugin.CurrentHighScore ? " New Highscore" : String.Empty;
-            this.scoreText.Text.SourceText = String.Format("Score: {0} {1}", player.Points, highschore);
+            string highschore = player.Points > FlapOrDieCorePlugin.CurrentHighScore ? " New Highscore" : string.Empty;
+            this.scoreText.Text.SourceText = string.Format("Score: {0} {1}", player.Points, highschore);
 
             deltaPos.X = this.baseSpeed + (player.Points * this.pointsMultiplier);
             deltaPos.X *= Time.MillisecondsPerFrame * Time.TimeMult / 1000;
@@ -135,7 +135,7 @@ namespace FlapOrDie.Controllers
 
         private void AddObstacle(float variance)
         {
-            variance = Math.Min(variance, 200);
+            variance = MathF.Min(variance, 200);
 
             Vector3 startPosition = new Vector3(FlapOrDieCorePlugin.HalfWidth + 50, MathF.Rnd.NextFloat(-variance, variance), 0);
             GameObject newObstacle = this.obstaclePrefab.Res.Instantiate();
